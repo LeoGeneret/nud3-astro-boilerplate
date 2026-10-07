@@ -32,4 +32,5 @@ pnpm dev
 - `cls()` from `@cher-ami/utils` is replaced by Astro's `class:list`.
 - `next/font` is replaced by `@fontsource/jost`; the `--jost` variable is set in `styles.scss`.
 - React hooks (`useGetVar`, `useMatchMedia`) became plain functions in `src/utils/`.
+- `sharp` is a direct dependency: with pnpm it is not resolvable from the project otherwise, and `astro:assets` fails at build ("Could not find Sharp").
 - Output is static: deploy `dist/` on Cloudflare Pages, Netlify, Vercel...
