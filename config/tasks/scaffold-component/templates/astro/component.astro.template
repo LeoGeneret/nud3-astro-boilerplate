@@ -1,0 +1,15 @@
+---
+import css from "./%%upperComponentName%%.module.scss"
+
+interface Props {
+  class?: string
+}
+
+const { class: className } = Astro.props
+---
+
+<div class:list={[css.root, className]}>
+  <div class={css.wrapper}>
+    %%upperComponentName%%
+  </div>
+</div>
